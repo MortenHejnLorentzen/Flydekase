@@ -1,0 +1,42 @@
+﻿<Window x:Class="flydekasser.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:flydekasser"
+        mc:Ignorable="d"
+        Title="Window1" Height="300" Width="500" Closing="Window_Closing" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label" Content="Matirial Name" HorizontalAlignment="Left" Margin="36,15,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Weight" HorizontalAlignment="Left" Margin="183,15,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="36,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="183,46,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Opdate" HorizontalAlignment="Left" Margin="36,112,0,0" VerticalAlignment="Top" Width="102" Click="button_Click"/>
+        <Button x:Name="button1" Content="Delete" HorizontalAlignment="Left" Margin="36,136,0,0" VerticalAlignment="Top" Width="102" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Add new matriale" HorizontalAlignment="Left" Margin="36,167,0,0" VerticalAlignment="Top" Width="102" Click="button2_Click"/>
+        <ListView x:Name="listView" ItemsSource="{Binding MatList}" HorizontalAlignment="Left" Height="222" Margin="330,15,0,0" VerticalAlignment="Top" Width="104" SelectionChanged="listView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Matirial" DisplayMemberBinding="{Binding strMatName}" Width="50"/>
+                    <GridViewColumn Header="Weight" DisplayMemberBinding="{Binding strWight}" Width="50"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="button3" Content="Done" HorizontalAlignment="Left" Margin="36,218,0,0" VerticalAlignment="Top" Width="102" Click="button3_Click"/>
+        <GroupBox x:Name="groupBox" Header="Where to read from" HorizontalAlignment="Left" Margin="183,98,0,0" VerticalAlignment="Top" Width="120" Height="74">
+            <Grid HorizontalAlignment="Left" Height="54" Margin="10,10,0,-12.8" VerticalAlignment="Top" Width="100">
+                <RadioButton x:Name="radButFromDF" IsChecked="True" Content="Datafile" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="80" Checked="radButFromDF_Checked"/>
+                <RadioButton x:Name="radButFromDB" Content="Databse" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="80" Checked="radButFromDB_Checked"/>
+            </Grid>
+
+        </GroupBox>
+        <GroupBox x:Name="groupBox1" Header="Where to write to" HorizontalAlignment="Left" Margin="183,177,0,0" VerticalAlignment="Top" Height="71" Width="120">
+            <Grid HorizontalAlignment="Left" Height="51" Margin="10,10,-2.8,-11.4" VerticalAlignment="Top" Width="100">
+                <RadioButton x:Name="radButToDF" IsChecked="True" Content="Datafile" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="80" Checked="radButToDF_Checked"/>
+                <RadioButton x:Name="radButToDB" Content="Database" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="80" Checked="radButToDB_Checked"/>
+            </Grid>
+        </GroupBox>
+
+
+    </Grid>
+</Window>

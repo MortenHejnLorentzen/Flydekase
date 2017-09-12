@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "flydekasser", "flydekasser\flydekasser.csproj", "{55C07CFA-3F4E-4ABA-85CA-6EBEE25B748B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspITDBClassLibrary", "..\Database\AspITDBClassLibrary\AspITDBClassLibrary\AspITDBClassLibrary.csproj", "{A8B475C1-DC66-4E4C-A8BF-8E1A0CEF4FB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55C07CFA-3F4E-4ABA-85CA-6EBEE25B748B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C07CFA-3F4E-4ABA-85CA-6EBEE25B748B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C07CFA-3F4E-4ABA-85CA-6EBEE25B748B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C07CFA-3F4E-4ABA-85CA-6EBEE25B748B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B475C1-DC66-4E4C-A8BF-8E1A0CEF4FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B475C1-DC66-4E4C-A8BF-8E1A0CEF4FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B475C1-DC66-4E4C-A8BF-8E1A0CEF4FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B475C1-DC66-4E4C-A8BF-8E1A0CEF4FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
